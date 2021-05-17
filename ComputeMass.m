@@ -10,7 +10,7 @@ for i=1:size(P,1)
         rind=find(d==min(d));
         r=d(rind(1));
         rdis=[rdis;r];
-        disp(i);
+%         disp(i);
 end  
 
 mass=rdis.*(1/sum(rdis));

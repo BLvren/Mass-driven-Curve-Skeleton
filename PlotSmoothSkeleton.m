@@ -1,7 +1,14 @@
 function []=PlotSmoothSkeleton(Datapoints,dsize,mass,skel,lianjie,scale,lwidth)
     figure;
     plot3(Datapoints(:,1),Datapoints(:,2),Datapoints(:,3),'.','color',[0 0 0],'MarkerSize',dsize);
-    hold on
+    % figure 1
+%     pcshow(Datapoints,[1 1 1],'MarkerSize',20);
+%     xlabel('X');
+%     ylabel('Y');
+%     zlabel('Z');
+%     % title('原始点云');
+%     surf(Datapoints(:,1),Datapoints(:,2),Datapoints(:,3),Datapoints(:,3))
+%     hold on
     for i=1:size(mass,1)
         hold on;
         plot3(skel(i,1),skel(i,2),skel(i,3),'.','color',[0 1 0],'MarkerSize',sqrt(mass(i)*scale)+5);%不同质量骨架点大小不一样

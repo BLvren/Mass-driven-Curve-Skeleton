@@ -38,7 +38,7 @@ for n=1:size(skel,1)
    
 %    Pin = Pin1 - ones(size(Pin1,1), 1) * meanMatrix; 
 
-     newPin1=Pin1-repmat(skel(n,:),size(Pin1,1),1);
+     newPin1=Pin1-repmat(skel(n,:),size(Pin1,1),1);  % ÎªÊ²Ã´ÊÇskel(n,:)
 %      Pin =  OT(n,in1) * newPin1;
      Pin =  newPin1;
  %       Pin=OT(n,in1)*Pin;
